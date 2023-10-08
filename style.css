@@ -1,0 +1,159 @@
+.container-satu {
+  background-color: black;
+  height: 100vh;
+  padding: 0;
+  background-image: url(assets/Group\ 34.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    background-color: gray;
+  }
+  .border-card {
+    margin: 5px auto;
+  }
+  .gambar-tentang-kami {
+    width: 80%;
+  }
+}
+.container-dua {
+  background-color: #212529;
+  /* height: 100vh; */
+  padding-top: 50px;
+  padding-bottom: 100px;
+  color: #ffc702;
+}
+.border-card {
+  border-style: solid;
+  border-color: #ffc702;
+  border-radius: 20px;
+  border-width: 3px;
+  padding: 60px 30px;
+  width: 80%;
+  height: 300px;
+  width: 250px;
+  margin: 5px auto;
+}
+.container-tiga {
+  background-color: #212529;
+}
+.catalog {
+  background-image: url(assets/Rectangle\ 8.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+.katalog-produk {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-empat {
+  padding: 50px 10%;
+}
+.container-lima {
+  padding: 50px 10%;
+}
+
+.container-tujuh {
+  background-color: #212529;
+  color: #fff;
+  padding: 50px 20px;
+}
+.container-catalog {
+  background-color: #212529;
+  color: #fff;
+  padding: 50px 20px;
+  /* height: 100vh; */
+  padding: 0;
+}
+
+/* SlideShow */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, sans-serif;
+}
+
+.image-sliderfade {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.container {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 20px 15px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 40%;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: left;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-color: #ddd;
+  border-width: 5 px;
+  border-style: solid;
+  border-radius: 50%;
+  display: inline-block;
+  transition: border-color 0.1s ease;
+}
+
+.active {
+  border-color: #666;
+}
+
+/* Animation */
+.fade {
+  -webkit-animation-name: fade-image;
+  -webkit-animation-duration: 2.9s;
+  animation-name: fade-image;
+  animation-duration: 2.9s;
+}
+
+@-webkit-keyframes fade-image {
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-image {
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
