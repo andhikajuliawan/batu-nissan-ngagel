@@ -46,6 +46,7 @@ window.addEventListener("scroll", function () {
 });
 
 window.addEventListener("scroll", function () {
+  console.log(window.scrollY);
   var navbar1 = document.getElementById("navbar-navigation1");
   var navbar2 = document.getElementById("navbar-navigation2");
   var navbar3 = document.getElementById("navbar-navigation3");
@@ -60,16 +61,37 @@ window.addEventListener("scroll", function () {
     navbar3.classList.remove("navbar-navigation-scrolled");
   }
 });
-window.addEventListener("scroll", function () {
-  console.log(window.scrollY);
-});
 
 window.addEventListener("scroll", function () {
   var navbar = document.getElementById("hidden-wa");
-  if (window.scrollY > 4160) {
+  if (window.scrollY > 5800) {
     // Adjust 50 to the desired scroll position when the change should happen
     navbar.classList.add("hidden-wa");
   } else {
     navbar.classList.remove("hidden-wa");
   }
 });
+
+function getSizePhone() {
+  var screenWidth = window.innerWidth;
+  var footer = document.getElementById("footer");
+  var navbar = document.getElementById("hidden-navbar");
+  console.log(screenWidth);
+
+  if (screenWidth > 400) {
+    footer.classList.add("footer-navigation-disable");
+  } else {
+    footer.classList.remove("footer-navigation-disable");
+  }
+  if (screenWidth < 400) {
+    navbar.classList.add("navbar-navigation-disable");
+  } else {
+    navbar.classList.remove("navbar-navigation-disable");
+  }
+}
+
+// Call getSizePhone initially
+getSizePhone();
+
+// Add an event listener to adjust on window resize
+window.addEventListener("resize", getSizePhone);

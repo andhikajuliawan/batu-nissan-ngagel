@@ -33,6 +33,37 @@
   display: none;
 }
 
+.footer-navigation-disable {
+  display: none !important;
+}
+
+.footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  border-radius: 20px 20px 0 0;
+  background-color: #ffc702;
+}
+
+.footer-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.footer-navigation-item {
+  margin: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  color: #212529;
+}
+.navbar-navigation-disable {
+  display: none;
+}
+
 
 @media (max-width: 991px) {
   .sidebar {
