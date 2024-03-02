@@ -7,6 +7,33 @@
   background-repeat: no-repeat;
 }
 
+.logo {
+  width: 40px;
+  border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+.navbar {
+  transition: background-color 0.3s ease-in-out;
+  /* Smooth transition for background color change */
+}
+
+.navbar-scrolled {
+  background-color: #333 !important;
+}
+.navbar-navigation-scrolled {
+  color: #ffc702 !important;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.hidden-wa {
+  display: none;
+}
+
+
 @media (max-width: 991px) {
   .sidebar {
     background-color: gray;

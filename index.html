@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="google-site-verification" content="mg1HUUoLQEDceg4eLEWVxKOLbm4V0brOOu0SVPqV5Tw" />
+    <meta
+      name="google-site-verification"
+      content="mg1HUUoLQEDceg4eLEWVxKOLbm4V0brOOu0SVPqV5Tw"
+    />
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,14 +19,18 @@
   </head>
   <body>
     <div class="container-fluid container-satu">
-      <nav class="navbar navbar-expand-lg bg-transparent navbar-dark">
+      <nav
+        class="navbar navbar-expand-lg bg-transparent navbar-dark fixed-top"
+        id="navbar"
+      >
         <div class="container">
-          <a
+          <!-- <a
             class="navbar-brand"
             href="#"
             style="font-size: 22px; font-weight: 500"
             >Batu Nisan Ngagel</a
-          >
+          > -->
+          <img class="logo" src="assets/logo.png" alt="logo" srcset="" />
           <button
             class="navbar-toggler"
             type="button"
@@ -55,17 +62,25 @@
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item mx-2">
                   <a
-                    class="nav-link active"
+                    class="nav-link"
                     aria-current="page"
                     href="catalog.html"
+                    id="navbar-navigation1"
                     >Katalog</a
                   >
                 </li>
                 <li class="nav-item mx-2">
-                  <a class="nav-link" href="#Testimoni">Testimoni</a>
+                  <a class="nav-link" href="#Testimoni" id="navbar-navigation2"
+                    >Testimoni</a
+                  >
                 </li>
                 <li class="nav-item mx-2">
-                  <a class="nav-link" href="#container-dua">Tentang Kami</a>
+                  <a
+                    class="nav-link"
+                    href="#container-dua"
+                    id="navbar-navigation3"
+                    >Tentang Kami</a
+                  >
                 </li>
               </ul>
             </div>
@@ -74,30 +89,30 @@
       </nav>
       <div class="px-3" style="display: flex; height: 100vh">
         <h1 style="color: white; margin: auto; text-align: center">
-          Menjual berbagai macam Jenis batu nisan makam <br>
-          Murah dan cepat selesai
-          free ongkir surabaya
+          Menjual berbagai macam Jenis batu nisan makam <br />
+          Murah dan cepat selesai free ongkir surabaya
         </h1>
       </div>
-
-      <a
-        href="https://wa.me/+628999423268?text=Saya%20ingin%20bertanya%20mengenai%20batu%20nisan"
-        target="_blank"
-        style="
-          text-decoration: none;
-          color: #fff;
-          position: fixed;
-          bottom: 50px;
-          right: 30px;
-          padding: 10px 15px;
-          background-color: #51c973;
-          border-radius: 30px;
-          z-index: 2;
-        "
-      >
-        <img class="me-2" src="assets/Whatsapp.png" style="width: 30px" />
-        Hubungi kami
-      </a>
+      <div class="wa" id="hidden-wa">
+        <a
+          href="https://wa.me/+628999423268?text=Saya%20ingin%20bertanya%20mengenai%20batu%20nisan"
+          target="_blank"
+          style="
+            text-decoration: none;
+            color: #fff;
+            position: fixed;
+            bottom: 50px;
+            right: 30px;
+            padding: 10px 15px;
+            background-color: #51c973;
+            border-radius: 30px;
+            z-index: 2;
+          "
+        >
+          <img class="me-2" src="assets/Whatsapp.png" style="width: 30px" />
+          Hubungi kami
+        </a>
+      </div>
     </div>
 
     <div class="conatiner-fluid container-dua" id="container-dua">
@@ -155,100 +170,6 @@
       <div class="py-5">
         <div class="container catalog text-center">
           <h1 class="mb-4" style="color: #ffc702">Katalog Produk</h1>
-          <!-- <div class="d-flex flex-row katalog-produk justify-content-center">
-            <div class="card m-3" style="max-width: 540px">
-              <div class="row g-0">
-                <div class="col-md-5">
-                  <img
-                    src="assets/2021-12-31.jpg"
-                    class="card-img-top"
-                    alt="..."
-                    style="height: 100%; object-fit: cover"
-                  />
-                </div>
-                <div class="col-md-6">
-                  <div class="card-body text-start">
-                    <h3 class="text-center" style="color: #000">
-                      Batu nisan granit kotak
-                    </h3>
-                    <h6 style="color: #000">Ukuran :</h6>
-                    <ol style="color: #000; padding: 0">
-                      <li style="list-style-type: none">
-                        20cm x 25 cm : Rp. 500.000
-                      </li>
-                      <li style="list-style-type: none">
-                        20cm x 30 cm : Rp. 700.000
-                      </li>
-                      <li style="list-style-type: none">
-                        25cm x 30 cm : Rp. 900.000
-                      </li>
-                      <li style="list-style-type: none">
-                        30cm x 33cm : Rp.1.200.000
-                      </li>
-                      <li style="list-style-type: none">
-                        30cm x 40cm : Rp.1.500.000
-                      </li>
-                      <li style="list-style-type: none">
-                        35cm x 40cm : Rp.1.800.000
-                      </li>
-                      <li style="list-style-type: none">
-                        40cm x 50cm : Rp.2.500.000
-                      </li>
-                      <li style="list-style-type: none">
-                        50cm x 60cm : Rp.3.000.000
-                      </li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card m-3" style="max-width: 540px">
-              <div class="row g-0">
-                <div class="col-md-5">
-                  <img
-                    src="assets/2021-12-31.jpg"
-                    class="card-img-top"
-                    alt="..."
-                    style="height: 100%; object-fit: cover"
-                  />
-                </div>
-                <div class="col-md-6">
-                  <div class="card-body text-start">
-                    <h3 class="text-center" style="color: #000">
-                      Batu nisan granit kotak
-                    </h3>
-                    <h6 style="color: #000">Ukuran :</h6>
-                    <ol style="color: #000; padding: 0">
-                      <li style="list-style-type: none">
-                        20cm x 25 cm : Rp. 500.000
-                      </li>
-                      <li style="list-style-type: none">
-                        20cm x 30 cm : Rp. 700.000
-                      </li>
-                      <li style="list-style-type: none">
-                        25cm x 30 cm : Rp. 900.000
-                      </li>
-                      <li style="list-style-type: none">
-                        30cm x 33cm : Rp.1.200.000
-                      </li>
-                      <li style="list-style-type: none">
-                        30cm x 40cm : Rp.1.500.000
-                      </li>
-                      <li style="list-style-type: none">
-                        35cm x 40cm : Rp.1.800.000
-                      </li>
-                      <li style="list-style-type: none">
-                        40cm x 50cm : Rp.2.500.000
-                      </li>
-                      <li style="list-style-type: none">
-                        50cm x 60cm : Rp.3.000.000
-                      </li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
 
           <!-- Slideshow Container Div -->
           <div class="container">
@@ -422,10 +343,17 @@
         </a>
       </div>
     </div>
+    <div class="container-delapan mt-5">
+      <img
+        src="assets/container-delapan.jpg"
+        style="width: 100%"
+        alt="container"
+      />
+    </div>
     <div class="container-tujuh text-center">
       <p>Hubungi Kami</p>
       <div class="row justify-content-center">
-        <div class="col-md-3">
+        <div class="col-md-3 mt-4">
           <a
             href="https://instagram.com/batunisanngagel?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="
             target="_blank"
@@ -435,7 +363,7 @@
             Instagram
           </a>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 mt-4">
           <a
             href="https://www.facebook.com/profile.php?id=100076078383209&mibextid=ZbWKwL"
             target="_blank"
@@ -443,6 +371,46 @@
           >
             <img class="me-3" src="assets/Facebook.png" style="width: 50px" />
             Facebook
+          </a>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-3 mt-4">
+          <a
+            href="https://wa.me/+628999423268?text=Saya%20ingin%20bertanya%20mengenai%20batu%20nisan"
+            target="_blank"
+            style="
+              text-decoration: none;
+              color: #fff;
+              bottom: 50px;
+              right: 30px;
+              padding: 15px 15px;
+              background-color: #51c973;
+              border-radius: 30px;
+              z-index: 2;
+            "
+          >
+            <img class="me-2" src="assets/Whatsapp.png" style="width: 30px" />
+            089676601060
+          </a>
+        </div>
+        <div class="col-md-3 mt-4">
+          <a
+            href="https://wa.me/+6289676601060?text=Saya%20ingin%20bertanya%20mengenai%20batu%20nisan"
+            target="_blank"
+            style="
+              text-decoration: none;
+              color: #fff;
+              bottom: 50px;
+              right: 30px;
+              padding: 15px 15px;
+              background-color: #51c973;
+              border-radius: 30px;
+              z-index: 2;
+            "
+          >
+            <img class="me-2" src="assets/Whatsapp.png" style="width: 30px" />
+            089676601060
           </a>
         </div>
       </div>
